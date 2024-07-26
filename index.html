@@ -35,12 +35,11 @@
             border: 0;
             border-top: 1px solid #ccc;
         }
-        ol {
+        .projects {
             padding-left: 20px;
         }
-        li {
+        .project {
             margin-bottom: 20px;
-            list-style-type: none;
         }
         a {
             color: #1a0dab;
@@ -69,29 +68,55 @@
         .navigation a:hover {
             background-color: #0e0e7b;
         }
+        .github-link {
+            text-align: center;
+            display: block;
+            margin-top: 10px;
+        }
+        .resume-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .resume-link a {
+            padding: 12px 25px;
+            background-color: #1a0dab;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .resume-link a:hover {
+            background-color: #0e0e7b;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>U K Samarth</h1>
-        <h2>I am an ECE student @ KLE Tech, Hubli</h2>
+        <h2>I am a final year Electronics and Communication Engineering student at KLE Technological University, Hubli</h2>
+        <img src="./github coverpage.jpg" alt="coverpage" height="230">
         <hr />
-        <h3>Projects</h3>
-        <ol>
-            <li>
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
                 <h3><a href="https://github.com/uksamarth/Underwater-Image-Enhancement-towards-NeRF-based-3D-Reconstruction">Underwater Image Enhancement towards NeRF-based 3D Reconstruction</a></h3>
-                <img src="./nerf arch final.png" alt="Image Enhancement Project" height="170">
-            </li>
-            <li>
-                <h3><a href="https://github.com/uksamarth/Qr-Tickets">QR-based Ticket Booking System</a></h3>
+                <img src="./nerf arch final.png" alt="Image Enhancement Project" height="170" width="800">
+            </div>
+            <div class="project">
+                <h3><a href="https://www.qrtickets.software/">QR-based Ticket Booking System</a></h3>
                 <img src="./qr tickets.png" alt="Embedded System Project" height="170">
-            </li>
-            <li>
+                <a href="https://github.com/uksamarth/Qr-Tickets" class="github-link">GitHub link</a>
+            </div>
+            <div class="project">
                 <h3><a href="https://github.com/uksamarth/Multimodal-Emotion-Recognition">Multimodal-Emotion-Recognition</a></h3>
                 <img src="./Facial Expression Recognition .jpg" alt="Facial Multimodal-Emotion-Recognition" height="290">
-            </li>
-        </ol>
+            </div>
+        </div>
         <hr />
+        <div class="resume-link">
+            <a href="./Public/resume.html">View Resume</a>
+        </div>
         <div class="navigation">
             <a href="./Public/about.html">About Me</a>
             <a href="./Public/contact.html">Contact Me</a>
