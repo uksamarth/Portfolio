@@ -30,9 +30,9 @@ I am a final year ECE student at KLE Technological University, Hubli. My interes
 
 ## Contact
 
-- **Email**: [your.email@example.com](mailto:your.email@example.com)
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/your-profile)
-- **GitHub**: [Your GitHub Profile](https://github.com/uksamarth)
+- **Email**: [uksamarth1809@gmail.com](mailto:uksamarth1809@gmail.com)
+- **LinkedIn**: [https://www.linkedin.com/in/u-k-samarth-6863b0251/](https://www.linkedin.com/in/u-k-samarth-6863b0251/)
+- **GitHub**: [https://github.com/uksamarth](https://github.com/uksamarth)
 
 ## License
 
