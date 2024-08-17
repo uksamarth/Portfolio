@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+nav {
+    background: linear-gradient(to right, #5C4033, #8B5A2B); /* Gradient for modern look */
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    height: 100vh;
+    background-color: #e3dac9; /* Warmer beige */
+    background-size: cover;
+}
+
+.hero .hero-image {
+    flex: 1;
+    background: url('./profile photo.jpg') no-repeat center center/cover;
+    background-size: cover;
+}
+
+.hero .hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.hero .hero-content h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #3E2723; /* Darker brown */
+    text-shadow: 1px 1px 2px #333; /* Subtle text shadow */
+}
+
+.hero .hero-content p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #333;
+}
+
+.hero .hero-content a {
+    text-decoration: none;
+    padding: 12px 25px;
+    background-color: #FF7F50; /* More vibrant button */
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.hero .hero-content a:hover {
+    background-color: #FF6347; /* Slightly darker on hover */
+}
+
+/* Skills and Projects Sections */
+.skills, .projects {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #FAEBD7; /* Light brown (AntiqueWhite) */
+}
+
+.skills h2, .projects h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #5C4033;
+    text-shadow: 1px 1px 2px #333;
+}
+
+.skills .skill-set, .projects .project-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills .skill-set div, .projects .project-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.projects .project-card:hover, .skills .skill-set div:hover {
+    transform: translateY(-10px);
+}
+
+.projects .project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.projects .project-card h3 {
+    margin: 15px 0;
+    font-size: 1.3em;
+    color: #5C4033;
+    text-shadow: 1px 1px 2px #333;
+}
+
+.projects .project-card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #5C4033;
+    padding: 20px 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #FF7F50;
+}
+
+footer p {
+    margin: 0;
+}

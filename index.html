@@ -4,123 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samarth's Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2, h3 {
-            text-align: center;
-            color: #333;
-        }
-        h2 {
-            font-size: 1.5em;
-        }
-        h3 {
-            margin: 10px 0;
-        }
-        hr {
-            margin: 20px 0;
-            border: 0;
-            border-top: 1px solid #ccc;
-        }
-        .projects {
-            padding-left: 20px;
-        }
-        .project {
-            margin-bottom: 20px;
-        }
-        a {
-            color: #1a0dab;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        img {
-            display: block;
-            margin: 10px auto;
-            border-radius: 10px;
-        }
-        .navigation {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .navigation a {
-            margin: 0 10px;
-            padding: 10px 20px;
-            background-color: #1a0dab;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .navigation a:hover {
-            background-color: #0e0e7b;
-        }
-        .github-link {
-            text-align: center;
-            display: block;
-            margin-top: 10px;
-        }
-        .resume-link {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .resume-link a {
-            padding: 12px 25px;
-            background-color: #1a0dab;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            display: inline-block;
-        }
-        .resume-link a:hover {
-            background-color: #0e0e7b;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Portfolio website of U K Samarth, an Electronics and Communication Engineering student specializing in AI, ML, and embedded systems.">
+    <meta name="keywords" content="U K Samarth, Portfolio, Electronics, Communication Engineering, AI, ML, Embedded Systems">
 </head>
 <body>
-    <div class="container">
-        <h1>U K Samarth</h1>
-        <h2>I am a final year Electronics and Communication Engineering student at KLE Technological University, Hubli</h2>
-        <img src="./github coverpage.jpg" alt="coverpage" height="230">
-        <hr />
-        <h2>Projects</h2>
-        <div class="projects">
-            <div class="project">
-                <h3><a href="https://github.com/uksamarth/Underwater-Image-Enhancement-towards-NeRF-based-3D-Reconstruction">Underwater Image Enhancement towards NeRF-based 3D Reconstruction</a></h3>
-                <img src="./nerf arch final.png" alt="Image Enhancement Project" height="170" width="800">
-            </div>
-            <div class="project">
-                <h3><a href="https://www.qrtickets.software/">QR-based Ticket Booking System</a></h3>
-                <img src="./qr tickets.png" alt="Embedded System Project" height="170">
-                <a href="https://github.com/uksamarth/Qr-Tickets" class="github-link">GitHub link</a>
-            </div>
-            <div class="project">
-                <h3><a href="https://github.com/uksamarth/Multimodal-Emotion-Recognition">Multimodal-Emotion-Recognition</a></h3>
-                <img src="./Facial Expression Recognition .jpg" alt="Facial Multimodal-Emotion-Recognition" height="290">
-            </div>
-        </div>
-        <hr />
-        <div class="resume-link">
-            <a href="./Public/resume.html">View Resume</a>
-        </div>
-        <div class="navigation">
-            <a href="./Public/about.html">About Me</a>
-            <a href="./Public/contact.html">Contact Me</a>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-image"></div>
+        <div class="hero-content">
+            <h1>U K Samarth</h1>
+            <p>ECE Student | Developer | Problem Solver</p>
+            <a href="#projects">Explore My Work</a>
         </div>
     </div>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2>My Skills</h2>
+        <div class="skill-set">
+            <div>
+                <i class="fas fa-code" style="font-size: 50px; color: #5C4033;"></i>
+                <h3>Programming</h3>
+                <p>C++, Python, Verilog</p>
+            </div>
+            <div>
+                <i class="fas fa-microchip" style="font-size: 50px; color: #5C4033;"></i>
+                <h3>Hardware Design</h3>
+                <p>FPGA, VHDL, Embedded Systems</p>
+            </div>
+            <div>
+                <i class="fas fa-brain" style="font-size: 50px; color: #5C4033;"></i>
+                <h3>AI/ML</h3>
+                <p>YOLOv7, TensorFlow, Keras</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-list">
+            <div class="project-card">
+                <img src="./nerf arch final.png" alt="Underwater Image Enhancement">
+                <h3><a href="https://github.com/uksamarth/Underwater-Image-Enhancement-towards-NeRF-based-3D-Reconstruction">Underwater Image Enhancement</a></h3>
+                <p>Enhancing underwater images using NeRF to improve 3D reconstruction quality.</p>
+            </div>
+            <div class="project-card">
+                <img src="./qr tickets.png" alt="QR-based Ticket Booking">
+                <h3><a href="https://github.com/uksamarth/Qr-Tickets">QR-based Ticket Booking System</a></h3>
+                <p>A smart ticket booking system that uses QR codes for easy and secure access.</p>
+            </div>
+            <div class="project-card">
+                <img src="./Facial Expression Recognition .jpg" alt="Multimodal Emotion Recognition">
+                <h3><a href="https://github.com/uksamarth/Multimodal-Emotion-Recognition">Multimodal Emotion Recognition</a></h3>
+                <p>Recognizing emotions through facial expressions and voice analysis.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+<footer>
+    <div class="social-media">
+        <a href="https://github.com/uksamarth" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/u-k-samarth-6863b0251/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/uk_samarth/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>© 2024 U K Samarth | All Rights Reserved</p>
+</footer>
+
 </body>
 </html>
